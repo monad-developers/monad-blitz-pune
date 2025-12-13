@@ -1,3 +1,42 @@
+// 5. RequestManager (The Reminder System) 📩
+// Think of it as: Venmo's "Request Money" Feature
+// What it does:
+
+// Creates payment requests ("Bob, you owe me ₹1000")
+// Sends to specific people
+// Generates QR codes for payment
+// Tracks pending/completed/declined requests
+// Has expiry dates
+
+// Key Functions:
+// soliditycreatePaymentRequest(expenseId, bob, expiry)   // Ask Bob to pay
+// acceptAndPayRequest{value: 1000}(requestId)    // Bob pays
+// declineRequest(requestId)                       // Bob declines
+// batchCreateRequests(expenseId)                  // Send to all members
+// ```
+
+// **Example:**
+// ```
+// Alice creates expense
+// Alice sends requests to Bob & Carol
+// They get notifications
+// They click "Pay" and it's done
+// ```
+
+// ---
+
+// ## 🔄 How They Work Together (Full Flow):
+// ```
+// USER JOURNEY:
+// 1. CrackPayCore → Register as "Alice"
+// 2. ContactBook → Add Bob & Carol as contacts
+// 3. GroupManager → Create "Friday Dinner" group with Bob & Carol
+// 4. GroupManager → Create expense: ₹3000 (split = ₹1000 each)
+// 5. RequestManager → Send payment requests to Bob & Carol
+// 6. PaymentProcessor → Bob & Carol pay their ₹1000 each
+// 7. CrackPayCore → Alice's dashboard shows ₹2000 received ✅
+
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 

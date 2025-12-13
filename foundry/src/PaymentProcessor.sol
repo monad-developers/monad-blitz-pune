@@ -1,3 +1,29 @@
+/**
+ * 4. PaymentProcessor (The Bank) 💸
+Think of it as: Venmo/PayPal Settlement
+What it does:
+
+Actually transfers money from person to person
+Settles expenses (full or partial)
+Direct payments (not tied to expenses)
+Tracks payment history
+Records who paid what to whom
+
+Key Functions:
+soliditysettleExpense{value: 1000}(expenseId)        // Pay your share
+settlePartialExpense{value: 500}(expenseId)  // Pay part
+directPayment{value: 1000}(recipient)        // Send money directly
+getUserStats(address)                        // See payment history
+```
+
+**Example:**
+```
+Bob owes Alice ₹1000
+Bob calls: settleExpense{value: 1000}
+Money instantly goes from Bob → Alice
+ */
+
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 

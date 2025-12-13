@@ -1,3 +1,26 @@
+// 3. GroupManager (The Organizer) 👥
+// Think of it as: Splitwise's Group Feature
+// What it does:
+
+// Creates expense groups ("Friday Dinner", "Roommates", etc.)
+// Adds/removes members from groups
+// Creates expenses and calculates splits
+// Tracks who owes what
+// Supports equal splits OR custom amounts
+
+// Key Functions:
+// soliditycreateGroup("Weekend Trip", [bob, carol])           // New group
+// createExpenseEqualSplit(groupId, 3000, "Hotel")     // Split equally
+// createExpenseCustomSplit(groupId, 3000, [...])      // Custom amounts
+// getExpense(expenseId)                               // Check details
+// ```
+
+// **Example:**
+// ```
+// 3 friends, ₹3000 bill
+// Equal split = ₹1000 each automatically calculated
+
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 

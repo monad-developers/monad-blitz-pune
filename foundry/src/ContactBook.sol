@@ -1,3 +1,20 @@
+/**
+ * ContactBook (Phone Contacts) 📇
+Think of it as: Your Phone's Contact List
+What it does:
+
+Save your friends' wallet addresses with names
+Like "Bob" instead of "0x742d35..."
+Add profile pictures
+Quick access when creating groups
+
+Key Functions:
+solidityaddContact(address, "Bob", "avatar")   // Add friend
+getUserContacts(address)                // See all contacts
+batchAddContacts([...])          
+ */
+
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 

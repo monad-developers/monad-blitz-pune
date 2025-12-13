@@ -1,3 +1,22 @@
+/**
+ * . CrackPayCore (Main Hub) 
+Think of it as: The Reception Desk
+What it does:
+
+Entry point for everything
+Registers users with username & avatar
+Coordinates all other contracts
+Provides dashboard views (your balance, groups, contacts)
+Has convenient "quick settle" and "direct send" functions
+
+Key Functions:
+solidityregisterUser("Alice", "ipfs://avatar")  // Sign up
+getUserDashboard(address)                // See all your data
+quickSettle(expenseId)                   // One-click pay
+ */
+
+
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
