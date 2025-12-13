@@ -1,0 +1,77 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/yashdiwan/Desktop/monad-arcade/apps/monad/smart_contracts/rewards/GameRewards.sol": {
+      "lastModificationDate": 1765603356656,
+      "contentHash": "921699a5e1d9eb47de5b39ca767882f4",
+      "sourceName": "smart_contracts/rewards/GameRewards.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "GameRewards"
+      ]
+    },
+    "/Users/yashdiwan/Desktop/monad-arcade/apps/monad/smart_contracts/stake_game/StakeGame.sol": {
+      "lastModificationDate": 1765603356656,
+      "contentHash": "5d51590a3bd67e194df0a130eceebc79",
+      "sourceName": "smart_contracts/stake_game/StakeGame.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "StakeGame"
+      ]
+    }
+  }
+}

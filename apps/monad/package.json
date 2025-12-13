@@ -1,0 +1,33 @@
+{
+  "name": "monad-contracts",
+  "version": "1.0.0",
+  "description": "Monad smart contracts for game rewards and stake-based gaming",
+  "main": "index.ts",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:rewards": "hardhat run scripts/deploy-rewards.ts --network monadTestnet",
+    "deploy:stake-game": "hardhat run scripts/deploy-stake-game.ts --network monadTestnet",
+    "deploy:rewards:local": "hardhat run scripts/deploy-rewards.ts --network localhost",
+    "deploy:stake-game:local": "hardhat run scripts/deploy-stake-game.ts --network localhost",
+    "fund:stake-game": "hardhat run scripts/fund-stake-game-pool.ts --network monadTestnet",
+    "test": "hardhat test",
+    "check-types": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18.0",
+    "npm": ">=9.0"
+  },
+  "dependencies": {
+    "ethers": "^6.13.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "dotenv": "^17.2.3",
+    "hardhat": "^2.22.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "private": true,
+  "packageManager": "bun@1.2.22"
+}
